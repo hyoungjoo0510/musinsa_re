@@ -371,7 +371,7 @@ $(function(){
         showLeft = 0;
         showCenter = 1;
         showRight = 2;
-        showText = 1;
+        
         magazineCenterIndex = 0;
         magazineHeight = $(".magazineCenter>ul>li>a>img").outerHeight();
         // console.log("높이"+magazineHeight)
@@ -379,6 +379,7 @@ $(function(){
             height: magazineHeight
         })
         if(winWidth> 1750){
+            showText = 1;
             $(".magazineCenter>ul>li").eq(1).css({
                 opacity: 1,
                 "z-index": 30
@@ -386,7 +387,9 @@ $(function(){
                 opacity: 0,
                 "z-index": 1
             })
+            $(".magazineWrap>.textBox>ul>li").eq(showText).css("opacity", 1).siblings().css("opacity", 0)
         }else{
+            showText = 0;
             $(".magazineCenter>ul>li").eq(0).css({
                 opacity: 1,
                 "z-index": 30
@@ -394,10 +397,12 @@ $(function(){
                 opacity: 0,
                 "z-index": 1
             })
+            $(".magazineWrap>.textBox>ul>li").eq(showText).css("opacity", 1).siblings().css("opacity", 0)
         }
         $(".magazineCenter").removeAttr("style");
         $(".magazineLeft").removeAttr("style");
         $(".magazineRight").removeAttr("style");
+       
     }
     magazineInitWeb();
     
