@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무신사</title>
+    <link rel="sortcut icon" href="images/favi.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signup_style.css">
+</head>
+<body>
+    <div class="innerBox">
+        <div class="signBox">
+            <h1 class="Title">회원가입</h1>
+            <form name="member" action="login_page.html" method="get">
+                <div class="signInput">
+                    <h2>필수 항목</h2>
+                    <input type="text" id="uId" placeholder="이메일(example@gmail.com)" required>
+                    <input type="password" placeholder="비밀번호 (6자 이상 영문/숫자 조합하여 입력" required>
+                    <input type="password" placeholder="비밀번호 확인" required>
+                    <input type="text" placeholder="이름" required>
+                    <input type="text" placeholder="휴대폰 번호 입력(-제외)" required>
+                    <input type="text" placeholder="생년월일" required>
+                </div>
+                <div class="termsBox">
+                    <div><a href="#">전체 약관 동의(선택항목 포함)</a></div>
+                    <div><input type="checkbox" id="adult"><label for="adult">본인은 14세 이상입니다.</label></div>
+                    <div><input type="checkbox" id="terms" required><label for="terms">이용약관 동의(필수)</label><a href="#void">내용보기</a></div>
+                    <div><input type="checkbox" id="personalInpo" required><label for="personalInpo">개인정보 수집/이용 동의(필수)</label><a href="#void">내용보기</a></div>
+                    <div><input type="checkbox" id="personalAd"><label for="personalAd">개인정보 수집/이용 및 광고성 정보 수신 동의(선택)</label></div>
+                    <!-- <div><a href="#">무신사 회원가입</a></div> -->
+                </div>
+                <div class="subMit">
+                    <input type="submit" id="signUp">
+                    <label for="signUp"><span>무신사 회원가입</span></label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
