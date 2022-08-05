@@ -322,6 +322,9 @@
     .styleWrap>.titleBox>.textBox>p:last-child{
         display: none;
     }
+    .magazineWrap>.magazineCenter{
+        height: 55vw;
+    }
 }
 
 @media screen and (max-width: 520px){
