@@ -150,7 +150,7 @@ $(function(){
         $("#nav>li>a").click(function(){
             if(winWidth<1280){
                 $(this).next().stop().animate({
-                    height: 300
+                    height: 170
                 }, 400, function(){
                     $(this).find("span").stop().animate({
                         opacity: 1
@@ -172,7 +172,7 @@ $(function(){
                     right: 0
                 }, 500)
                 $(".closeBtn").stop().animate({
-                    right: 50
+                    right: 25
                 }, 500)
             }
 

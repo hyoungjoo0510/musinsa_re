@@ -46,15 +46,15 @@ nav{
 .closeBtn{
     display: block;
     position: absolute;
-    top: 150px;
+    top: 106px;
     right:-100%;
     z-index: 15;
 }
 .closeBtn>a{
 }
 .closeBtn>a>img{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 }
 #nav{
     display: flex;
